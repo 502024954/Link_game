@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/newGame"
+        android:icon="@drawable/ic_autorenew_white_24dp"
+        android:title="New"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/shuffle"
+        android:icon="@drawable/ic_shuffle_white_24dp"
+        android:title="Shuffle"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/level"
+        android:title="Level"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/easy"
+                    android:title="Easy"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/medium"
+                    android:title="Medium"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/diffcult"
+                    android:title="Diffcult"
+                    app:showAsAction="never" />
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/music"
+        android:checkable="true"
+        android:title="Background Music"
+        app:showAsAction="never" />
+
+</menu>
